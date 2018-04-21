@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <display-name>Expense</display-name>
+  <description>Expense</description>
+  
+  <servlet>
+    <servlet-name>Backend</servlet-name>
+    <servlet-class>Backend</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Backend</servlet-name>
+    <url-pattern>/add-expense</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetList</servlet-name>
+    <servlet-class>GetList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetList</servlet-name>
+    <url-pattern>/get-list</url-pattern>
+  </servlet-mapping>
+</web-app>
